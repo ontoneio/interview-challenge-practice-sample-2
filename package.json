@@ -4,7 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev:start": "nodemon app.js",
+    "db:create": "createdb cars",
+    "db:loadschema": "psql cars < db/schema.sql",
+    "db:seed": "psql cars < db/seedDB.sql",
+    "db:init": "npm run db:create && npm run db:loadschema && npm run db:seed",
+    "db:reset": "dropdb cars && npm run db:init"
   },
   "repository": {
     "type": "git",
@@ -16,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/jcelder/interview-challenge-practice-sample-2/issues"
   },
-  "homepage": "https://github.com/jcelder/interview-challenge-practice-sample-2#readme"
+  "homepage": "https://github.com/jcelder/interview-challenge-practice-sample-2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg-promise": "^7.3.2",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.5"
+  }
 }
