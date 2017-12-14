@@ -33,12 +33,12 @@
       { manufacturer: 'Mercedes', model: 'E400' }   
     ]
     ```
-- Create a function that takes an owner's name as a case-insensitive argument that returns a promise that resolves to a list of all cars owned by a specific owner.
+- Create a function that takes an owner's name as a case-insensitive argument that returns a promise that resolves to a list of all car models and their manufacturer owned by a specific owner.
   - Sample Promise Resolution:
     ```
     [
-      { model: 'Mustang' },
-      { model: '328i' }
+      { manufacturer: 'Ford', model: 'Mustang' },
+      { manufacturer: 'BMW', model: '328i' }
     ]
     ```
 - Create a function that takes a manufacturer name as an argument that returns a promise that resolves to a list of all cars made by that manufacturer.
