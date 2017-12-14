@@ -6,7 +6,7 @@
 - Use `npm run dev:start to start the server`
 
 ## Database
-![](cars ERD.png)
+![Cars](./cars_ERD.png)
 
 ## SQL
 - Create a function that returns a promise that resolves to a list of all car owners.
