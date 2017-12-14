@@ -53,9 +53,9 @@
 
 ## Routes
 - Create a route for `/api/manufacturers/:manufacturer_id/owners` that renders `owners.pug` that displays all owners for a particular manufacturer name.
-- Create a route for `api/manufacturers/:manufacturer/cars` that renders a page that displays all cars for a particular manufacturer name.
-- Create a route for `api/cars/list` that renders a page that displays all cars and their manufacturers.
-- Create a route for `/cars/create` that takes in form data that adds a new car to the database and then redirects to the `api/cars/list` route.
+- Create a route for `/api/manufacturers/:manufacturer/cars` that renders a page that displays all cars for a particular manufacturer name.
+- Create a route for `/api/cars/list` that renders a page that displays all cars and their manufacturers.
+- Create a route for `/api/cars/create` that takes in form data that adds a new car to the database and then redirects to the `/api/cars/list` route.
   - Data passed via the form should be a model name and manufacturer name
 
 ## DOM Manipulation
